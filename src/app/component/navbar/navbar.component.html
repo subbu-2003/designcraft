@@ -1,0 +1,55 @@
+<!-- Navbar -->
+<nav [ngClass]="{'shadow-md': scrolled}" class="sticky top-0 z-50 bg-[#EFE6FF] py-4 px-6 transition-shadow duration-300">
+  <div class=" max-w-7xl mx-auto flex items-center justify-between">
+
+    <!-- Left: Logo and Name (stacked vertically) -->
+    <div class="flex flex-col items-center space-y-1">
+      <img src="assets/logo/navLogo.svg" alt="Logo" class="h-12 w-12" />
+      <span class="text-sm font-semibold text-gray-900">Design Craft Technologies</span>
+    </div>
+
+    <!-- Center Nav Links (Desktop) -->
+    <div class="hidden md:flex space-x-5 px-6 py-4 font-medium bg-gradient-to-r from-[#e0e0e0] to-pink-200 rounded-full shadow text-gray-900">
+      <a href="service" class="text-gray-700 hover:text-purple-600">Services</a>
+      <a href="#" class="text-[#bb9de5] hover:text-purple-600">Portfolio</a>
+      <a href="#" class="text-gray-700 hover:text-purple-600">Our Team</a>
+      <a href="#" class="text-gray-700 hover:text-purple-600">About us</a>
+      <a href="#" class="text-gray-700 hover:text-purple-600">Blog</a>
+    </div>
+
+    <!-- CTA Button (Desktop) -->
+    <div class="hidden md:block">
+      <a href="#" class="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold rounded-full shadow hover:opacity-90 transition-all duration-300">
+        Let’s talk
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button (click)="menuOpen = !menuOpen" class="text-purple-700 focus:outline-none">
+        <svg *ngIf="!menuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg *ngIf="menuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="menuOpen" class="md:hidden mt-4 flex flex-col space-y-2 text-sm font-medium text-gray-700 px-4">
+    <a href="#" class="block py-2 border-b">Services</a>
+    <a href="#" class="block py-2 border-b text-[#bb9de5]">Portfolio</a>
+    <a href="#" class="block py-2 border-b">Our Team</a>
+    <a href="#" class="block py-2 border-b">About us</a>
+    <a href="#" class="block py-2 border-b">Blog</a>
+    <a href="#" class="block mt-2 w-fit px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full shadow hover:opacity-90 transition-all duration-300">
+      Let’s talk
+    </a>
+  </div>
+</nav>
