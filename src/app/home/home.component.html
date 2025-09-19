@@ -1,5 +1,5 @@
 <!-- Hero Section -->
-<section class="bg-[#EFE6FF] py-16">
+<section class="bg-[#E5D1FF] py-16">
   <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center ">
     
     <!-- Left Text Column -->
@@ -90,132 +90,114 @@
   <div class="max-w-7xl mx-auto space-y-6">
 
     <!-- Row 1: Full width -->
-    <div class="bg-[#5C27FE] text-white text-center py-4 rounded-2xl font-semibold text-lg md:text-xl transition transform">
+    <div class="bg-[#5C27FE] text-white text-center py-4 rounded-2xl font-semibold text-lg md:text-xl">
       Our IT Solutions
     </div>
 
-    <!-- Row 2: UIUX Design + Mobile Development (reversed on mobile) -->
-    <div class="flex flex-col-reverse md:flex-row md:space-x-6 space-y-4 md:space-y-0">
+    <!-- Row 2: UIUX Design + Mobile Development -->
+    <div class="flex flex-col-reverse md:flex-row md:gap-6 gap-4">
       <!-- Mobile Development (first on mobile) -->
-      <div class="w-full md:w-[40%] bg-[#8C2B75] text-white text-center py-4 rounded-2xl font-semibold transition transform hover:scale-105 hover:shadow-lg">
+      <div class="w-full md:w-[40%] bg-[#8C2B75] text-white text-center py-4 rounded-2xl font-semibold">
         Mobile Development
       </div>
       <!-- UIUX Design -->
-      <div class="w-full md:w-[60%] bg-[#C8A9FF] text-[#5C1A6C] text-center py-4 rounded-2xl font-semibold transition transform hover:scale-105 hover:shadow-lg">
+      <div class="w-full md:w-[60%] bg-[#C8A9FF] text-[#5C1A6C] text-center py-4 rounded-2xl font-semibold">
         UIUX Design
       </div>
     </div>
 
-    <!-- Row 3: Social Media Handling + IoT Automation (reversed on mobile) -->
-    <div class="flex flex-col-reverse md:flex-row md:space-x-6 space-y-4 md:space-y-0">
+    <!-- Row 3: Social Media Handling + IoT Automation -->
+    <div class="flex flex-col-reverse md:flex-row md:gap-6 gap-4">
       <!-- IoT Automation (first on mobile) -->
-      <div class="w-full md:w-[60%] bg-[#C8A9FF] text-[#5C1A6C] text-center py-4 rounded-2xl font-semibold transition transform hover:scale-105 hover:shadow-lg">
+      <div class="w-full md:w-[60%] bg-[#C8A9FF] text-[#5C1A6C] text-center py-4 rounded-2xl font-semibold">
         IoT Automation
       </div>
       <!-- Social Media Handling -->
-      <div class="w-full md:w-[40%] bg-[#8C2B75] text-white text-center py-4 rounded-2xl font-semibold transition transform hover:scale-105 hover:shadow-lg">
-        Social media handling
+      <div class="w-full md:w-[40%] bg-[#8C2B75] text-white text-center py-4 rounded-2xl font-semibold">
+        Social Media Handling
       </div>
     </div>
 
-    <!-- Row 4: Cloud Platform + Web Development (reversed on mobile) -->
-    <div class="flex flex-col-reverse md:flex-row md:space-x-6 space-y-4 md:space-y-0">
-      <!-- Mobile Development (first on mobile) -->
-      <div class="w-full md:w-[40%] bg-[#8C2B75] text-white text-center py-4 rounded-2xl font-semibold transition transform hover:scale-105 hover:shadow-lg">
-       Cloud Platform
+    <!-- Row 4: Cloud Platform + Web Development -->
+    <div class="flex flex-col-reverse md:flex-row md:gap-6 gap-4">
+      <!-- Cloud Platform (first on mobile) -->
+      <div class="w-full md:w-[40%] bg-[#8C2B75] text-white text-center py-4 rounded-2xl font-semibold">
+        Cloud Platform
       </div>
-      <!-- UIUX Design -->
-      <div class="w-full md:w-[60%] bg-[#C8A9FF] text-[#5C1A6C] text-center py-4 rounded-2xl font-semibold transition transform hover:scale-105 hover:shadow-lg">
+      <!-- Web Development -->
+      <div class="w-full md:w-[60%] bg-[#C8A9FF] text-[#5C1A6C] text-center py-4 rounded-2xl font-semibold">
         Web Development
       </div>
     </div>
 
-
-    <!-- Row 4: Full width -->
-    <!-- <div class="bg-[#5C27FE] text-white text-center py-4 rounded-2xl font-semibold text-lg md:text-xl transition transform hover:scale-105 hover:shadow-lg">
-      Web Development
-    </div> -->
-
   </div>
 </section>
 
-<!-- Client Stories -->
 
+
+<!-- Client Stories -->
 <section class="bg-[#EFE6FF] py-16 px-4">
   <div class="max-w-7xl mx-auto">
    
-     <!-- Heading with gradient text, underline, and end dot -->
+    <!-- Heading with gradient text, underline, and end dot -->
     <div class="inline-block mb-8">
-      <!-- Gradient Text Heading -->
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#5C27FE] to-[#A875FF] text-transparent bg-clip-text">
         Client's Success Stories
       </h2>
 
       <!-- Line and Dot -->
       <div class="flex items-center mt-2">
-        <!-- Line with fixed width on small screens -->
         <div class="w-[300px] sm:w-[300px] md:w-[500px] h-[5px] bg-gradient-to-r from-[#A875FF] to-transparent"></div>
-        <!-- Dot -->
         <div class="w-4 h-4 bg-[#6D28D9] rounded-full ml-2"></div>
       </div>
     </div>
 
     <!-- Cards -->
- <div class="max-w-6xl mx-auto space-y-8">
-  <div *ngFor="let story of stories; let i = index"
-       class="flex flex-col md:flex-row md:items-center bg-[#E5D1FF] text-black rounded-2xl shadow-xl p-6 gap-6 transition hover:scale-[1.01] hover:shadow-xl/20"
-       [ngClass]="{ 'md:flex-row-reverse': i % 2 !== 0 }">
+    <div class="max-w-6xl mx-auto space-y-8">
+      <div *ngFor="let story of stories; let i = index"
+           class="flex flex-col md:flex-row md:items-center bg-[#E5D1FF] text-black rounded-2xl shadow-xl p-6 gap-6 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
+           [ngClass]="{ 'md:flex-row-reverse': i % 2 !== 0 }">
 
-    <!-- Image (40%) -->
-    <div class="w-full md:w-[40%]">
-      <img [src]="story.image" alt="{{ story.title }}"
-           class="rounded-2xl w-full h-52 md:h-48 lg:h-56 object-cover" />
+        <!-- Image (40%) -->
+        <div class="w-full md:w-2/5 flex-shrink-0">
+          <img [src]="story.image" alt="{{ story.title }}"
+               class="rounded-2xl w-full h-52 md:h-48 lg:h-56 object-cover" />
+        </div>
+
+        <!-- Text Content (60%) -->
+        <div class="w-full md:w-3/5">
+          <p class="mb-1 text-sm font-medium text-gray-600">
+            {{ story.category }}
+          </p>
+
+          <h3 class="text-lg font-bold text-gray-900">
+            {{ story.title }}
+          </h3>
+
+          <p class="mt-2 mb-4 text-gray-700">
+            {{ story.description }}
+          </p>
+
+          <div class="mb-3 flex flex-wrap gap-2">
+            <span *ngFor="let tag of story.tags"
+                  class="px-3 py-1 text-xs font-semibold text-[#4B1C7F] bg-[#d2b9ff] rounded-full">
+              {{ tag }}
+            </span>
+          </div>
+
+          <button class="flex items-center gap-2 px-4 py-2 text-sm text-white transition-colors duration-300 rounded-full bg-[#5C27FE] hover:bg-[#4b21d6]">
+            <span>View More</span>
+            <span class="flex items-center justify-center w-5 h-5 text-xs font-bold text-[#5C27FE] bg-white rounded-full">
+              →
+            </span>
+          </button>
+        </div>
+
+      </div>
     </div>
-
-    <!-- Text Content (60%) -->
-   <div class="w-full md:w-[60%]">
-  <!-- Category -->
-  <p class="mb-1 text-sm font-medium text-gray-600">
-    {{ story.category }}
-  </p>
-
-  <!-- Title -->
-  <h3 class="text-lg font-bold text-gray-900">
-    {{ story.title }}
-  </h3>
-
-  <!-- Description -->
-  <p class="mt-2 mb-4 text-gray-700">
-    {{ story.description }}
-  </p>
-
-  <!-- Tags -->
-  <div class="mb-3 flex flex-wrap gap-2">
-    <span
-      *ngFor="let tag of story.tags"
-      class="px-3 py-1 text-xs font-semibold text-[#4B1C7F] bg-[#d2b9ff] rounded-full"
-    >
-      {{ tag }}
-    </span>
-  </div>
-
-  <!-- View More Button -->
-  <button
-    class="flex items-center gap-2 px-4 py-2 text-sm text-white transition rounded-full bg-[#5C27FE] hover:bg-[#4b21d6]"
-  >
-    <span>View More</span>
-    <span
-      class="flex items-center justify-center w-5 h-5 text-xs font-bold text-[#5C27FE] bg-white rounded-full"
-    >
-      →
-    </span>
-  </button>
-</div>
-
-  </div>
-</div>
   </div>
 </section>
+
 
 
 <!-- What's Trending -->
