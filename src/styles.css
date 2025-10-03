@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+a {
+  color: rgb(81, 81, 81);
+  text-decoration: none; /* removes underline */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #7E22CE;
+  text-decoration: none; /* keep no underline on hover */
+}
+
+h1{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    font-weight: bold
+}
+
+h2{
+    color: #7E22CE;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+h3{
+     color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: bold
+}
+h4{
+     color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold
+}
+h5{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: bold
+}
+button{
+     border-radius: 9999px; 
+}
