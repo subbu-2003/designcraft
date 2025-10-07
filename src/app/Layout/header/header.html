@@ -4,26 +4,30 @@
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
 
     <!-- Left: Logo + Name -->
-    <div class="flex flex-col items-center text-center">
-      <img src="assets/logo/navLogo.svg" alt="Logo" class="h-12 w-12 mx-auto" />
-      <span class="mt-1 text-sm font-semibold text-gray-900">
-        Design Craft Technologies
-      </span>
-    </div>
+   <div 
+  class="flex flex-col items-center text-center cursor-pointer"
+  [routerLink]="['/']"
+>
+  <img src="assets/logo/navLogo.svg" alt="Logo" class="h-12 w-12 mx-auto" />
+  <span class="mt-1 text-sm font-semibold text-gray-900">
+    Design Craft Technologies
+  </span>
+</div>
+
 
     <!-- Center Nav Links (Desktop) -->
-    <div class="hidden md:flex items-center space-x-6 px-8 py-2 font-medium 
-                bg-gradient-to-r from-[#e0e0e0] to-pink-200 rounded-full shadow">
-      <a href="service" class="text-gray-700 hover:text-purple-600">Services</a>
+    <div class="hidden md:flex items-center space-x-6 px-8 py-3 font-medium 
+                bg-gradient-to-r from-[#e0e0e0] to-pink-300 rounded-full shadow">
+      <a href="service" class="text-gray-950 hover:text-purple-600">Services</a>
       <a href="portfolio" class="text-[rgb(126,34,206)] hover:text-purple-600">Portfolio</a>
-      <a href="ourteam" class="text-gray-700 hover:text-purple-600">Our Team</a>
-      <a href="#" class="text-gray-700 hover:text-purple-600">About us</a>
-      <a href="#" class="text-gray-700 hover:text-purple-600">Blog</a>
+      <a href="ourteam" class="text-gray-950 hover:text-purple-600">Our Team</a>
+     <a href="#about-us" class="text-gray-950 hover:text-purple-600">About us</a>
+      <a href="#" class="text-gray-950 hover:text-purple-600">Blog</a>
     </div>
 
     <!-- CTA Button (Desktop) -->
     <div class="hidden md:block">
-      <a href="#" 
+      <a href="contact" 
          class="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-500 
                 text-white font-semibold rounded-full shadow 
                 hover:opacity-90 transition-all duration-300">

@@ -1,3 +1,4 @@
+import { Contact } from './contact/contact';
 import { Routes } from '@angular/router';
 import { Home } from './home/home';
 import { Services } from './services/services';
@@ -16,5 +17,8 @@ export const routes: Routes = [
     },
     {
         path:'ourteam', component:Ourteam
+    },
+    {
+        path:'contact', component:Contact
     }
 ];

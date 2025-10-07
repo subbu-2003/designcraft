@@ -1,13 +1,13 @@
 <!-- Hero Section -->
-<section class="bg-[#E5D1FF] py-16">
+<section class="bg-[#E5D1FF] py-16 overflow-hidden">
   <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
     
     <!-- Left Text Column -->
-    <div class="lg:w-1/2 mb-12 lg:mb-0 text-left">
+    <div class="lg:w-1/2 mb-12 lg:mb-0 text-left animate-slide-left">
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black leading-tight">
         Grow Your Business <br />
-        with Our Proven <span class="text-[#7D55FF]">IT</span><br />
-        <span class="text-[#A875FF]">Services & Strategies</span>
+        with Our Proven <span class="text-[#762bf8]">IT</span><br />
+        <span class="text-[#762bf8]">Services & Strategies</span>
       </h1>
       <p class="text-gray-700 mt-6 font-semibold text-lg sm:text-xl leading-relaxed">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -15,12 +15,13 @@
     </div>
 
     <!-- Right Graphic Column -->
-    <div class="relative lg:w-1/2 flex justify-center items-center w-full">
-      <!-- Arrow Shape -->
-      <img src="assets/logo/navLogo.svg" alt="Arrow Graphic" class="w-64 sm:w-72 md:w-96" />
+    <div class="relative lg:w-1/2 flex justify-center items-center w-full animate-slide-right">
+      <!-- Arrow Shape with heartbeat -->
+      <img src="assets/logo/navLogo.svg" alt="Arrow Graphic"
+           class="w-64 sm:w-72 md:w-96 animate-heartbeat" />
       
-      <!-- Floating Labels -->
-      <div class="absolute top-0 right-0 bg-white shadow-md rounded-lg flex items-center px-4 py-2 space-x-3 text-left text-sm">
+      <!-- Floating Labels with fade/slide delays -->
+      <div class="absolute top-0 right-0 bg-white shadow-md rounded-lg flex items-center px-4 py-2 space-x-3 text-left text-sm animate-fade-in delay-1">
         <div class="w-4 h-4 rounded-full bg-purple-700"></div>
         <div>
           <p class="text-xs text-gray-600 font-medium">New lead</p>
@@ -28,7 +29,7 @@
         </div>
       </div>
 
-      <div class="absolute left-0 top-1/3 bg-white shadow-md rounded-lg flex items-center px-4 py-2 space-x-3 text-left text-sm">
+      <div class="absolute left-0 top-1/3 bg-white shadow-md rounded-lg flex items-center px-4 py-2 space-x-3 text-left text-sm animate-fade-in delay-2">
         <div class="w-4 h-4 rounded-full bg-purple-400"></div>
         <div>
           <p class="text-xs text-gray-600 font-medium">New lead</p>
@@ -36,7 +37,7 @@
         </div>
       </div>
 
-      <div class="absolute bottom-0 right-4 bg-white shadow-md rounded-lg flex items-center px-4 py-2 space-x-3 text-left text-sm">
+      <div class="absolute bottom-0 right-4 bg-white shadow-md rounded-lg flex items-center px-4 py-2 space-x-3 text-left text-sm animate-fade-in delay-3">
         <div class="w-4 h-4 rounded-full bg-orange-500"></div>
         <div>
           <p class="text-xs text-gray-600 font-medium">New lead</p>
@@ -48,12 +49,13 @@
 </section>
 
 
+
 <!-- About Section -->
-<section class="bg-[#EFE6FF] py-16 flex justify-center px-6 md:px-0">
-  <div class="max-w-7xl w-full text-left">
+<section id="about-us" class="bg-[#EFE6FF] py-16 flex justify-center px-6 md:px-0 overflow-hidden">
+  <div class="max-w-7xl w-full text-left animate-fade-in-up">
     
     <!-- Heading with gradient text, underline, and end dot -->
-    <div class="inline-block mb-8">
+    <div class="inline-block mb-8 animate-slide-in-left">
       <!-- Gradient Text Heading -->
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#5C27FE] to-[#A875FF] text-transparent bg-clip-text">
         Who We Are
@@ -62,26 +64,26 @@
       <!-- Line and Dot -->
       <div class="flex items-center mt-2">
         <!-- Line with fixed width on small screens -->
-        <div class="w-[200px] sm:w-[250px] md:w-[300px] h-[5px] bg-gradient-to-r from-[#A875FF] to-transparent"></div>
+        <div class="w-[200px] sm:w-[250px] md:w-[300px] h-[5px] bg-gradient-to-r from-[#A875FF] to-transparent animate-grow-line"></div>
         <!-- Dot -->
-        <div class="w-4 h-4 bg-[#6D28D9] rounded-full ml-2"></div>
+        <div class="w-4 h-4 bg-[#6D28D9] rounded-full ml-2 animate-bounce"></div>
       </div>
     </div>
 
     <!-- Paragraphs -->
-    <p class="text-gray-600 font-medium mb-4 leading-relaxed text-sm sm:text-base">
+    <p class="text-gray-600 font-medium mb-4 leading-relaxed text-sm sm:text-base animate-fade-in delay-100">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     </p>
 
-    <p class="text-gray-600 font-medium mb-4 leading-relaxed text-sm sm:text-base">
+    <p class="text-gray-600 font-medium mb-4 leading-relaxed text-sm sm:text-base animate-fade-in delay-200">
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
 
-    <p class="text-gray-600 font-medium leading-relaxed text-sm sm:text-base">
+    <p class="text-gray-600 font-medium leading-relaxed text-sm sm:text-base animate-fade-in delay-300">
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -93,43 +95,51 @@
 <section class="bg-[#EFE6FF] py-16 px-4">
   <div class="max-w-7xl mx-auto space-y-6">
 
-    <!-- Row 1: Full width -->
-    <div class="bg-[#5C27FE] text-white text-center py-4 rounded-2xl font-semibold text-lg md:text-xl">
+    <!-- Row 1 -->
+    <div
+      class="bg-[#5C27FE] text-white text-center py-4 rounded-2xl font-semibold text-lg md:text-xl
+             transition-transform duration-700 hover:scale-105 hover:shadow-xl animate-fadeIn">
       Our IT Solutions
     </div>
 
-    <!-- Row 2: UIUX Design + Mobile Development -->
+    <!-- Row 2 -->
     <div class="flex flex-col-reverse md:flex-row md:gap-6 gap-4">
-      <!-- Mobile Development (first on mobile) -->
-      <div class="w-full md:w-[40%] bg-[#8C2B75] text-white text-center py-4 rounded-2xl font-semibold">
+      <div
+        class="w-full md:w-[40%] bg-[#8C2B75] text-white text-center py-4 rounded-2xl font-semibold
+               transition-transform duration-700 hover:scale-105 hover:shadow-xl animate-slideInLeft">
         Mobile Development
       </div>
-      <!-- UIUX Design -->
-      <div class="w-full md:w-[60%] bg-[#C8A9FF] text-[#5C1A6C] text-center py-4 rounded-2xl font-semibold">
+      <div
+        class="w-full md:w-[60%] bg-[#C8A9FF] text-[#5C1A6C] text-center py-4 rounded-2xl font-semibold
+               transition-transform duration-700 hover:scale-105 hover:shadow-xl animate-slideInRight">
         UIUX Design
       </div>
     </div>
 
-    <!-- Row 3: Social Media Handling + IoT Automation -->
+    <!-- Row 3 -->
     <div class="flex flex-col-reverse md:flex-row md:gap-6 gap-4">
-      <!-- IoT Automation (first on mobile) -->
-      <div class="w-full md:w-[60%] bg-[#C8A9FF] text-[#5C1A6C] text-center py-4 rounded-2xl font-semibold">
+      <div
+        class="w-full md:w-[60%] bg-[#C8A9FF] text-[#5C1A6C] text-center py-4 rounded-2xl font-semibold
+               transition-transform duration-700 hover:scale-105 hover:shadow-xl animate-slideInLeft">
         IoT Automation
       </div>
-      <!-- Social Media Handling -->
-      <div class="w-full md:w-[40%] bg-[#8C2B75] text-white text-center py-4 rounded-2xl font-semibold">
+      <div
+        class="w-full md:w-[40%] bg-[#8C2B75] text-white text-center py-4 rounded-2xl font-semibold
+               transition-transform duration-700 hover:scale-105 hover:shadow-xl animate-slideInRight">
         Social Media Handling
       </div>
     </div>
 
-    <!-- Row 4: Cloud Platform + Web Development -->
+    <!-- Row 4 -->
     <div class="flex flex-col-reverse md:flex-row md:gap-6 gap-4">
-      <!-- Cloud Platform (first on mobile) -->
-      <div class="w-full md:w-[40%] bg-[#8C2B75] text-white text-center py-4 rounded-2xl font-semibold">
+      <div
+        class="w-full md:w-[40%] bg-[#8C2B75] text-white text-center py-4 rounded-2xl font-semibold
+               transition-transform duration-700 hover:scale-105 hover:shadow-xl animate-slideInLeft">
         Cloud Platform
       </div>
-      <!-- Web Development -->
-      <div class="w-full md:w-[60%] bg-[#C8A9FF] text-[#5C1A6C] text-center py-4 rounded-2xl font-semibold">
+      <div
+        class="w-full md:w-[60%] bg-[#C8A9FF] text-[#5C1A6C] text-center py-4 rounded-2xl font-semibold
+               transition-transform duration-700 hover:scale-105 hover:shadow-xl animate-slideInRight">
         Web Development
       </div>
     </div>
@@ -138,13 +148,13 @@
 </section>
 
 
-
 <!-- Client Stories -->
 <section class="bg-[#EFE6FF] py-16 px-4">
   <div class="max-w-7xl mx-auto">
    
     <!-- Heading with gradient text, underline, and end dot -->
-    <div class="inline-block mb-8">
+    <div class="inline-block mb-8 animate-slide-in-left">
+      <!-- Gradient Text Heading -->
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#5C27FE] to-[#A875FF] text-transparent bg-clip-text">
         Client's Success Stories
       </h2>
@@ -152,8 +162,10 @@
       <!-- Line and Dot -->
       <div class="flex items-center mt-2">
         <div class="w-[300px] sm:w-[300px] md:w-[500px] h-[5px] bg-gradient-to-r from-[#A875FF] to-transparent"></div>
-        <div class="w-4 h-4 bg-[#6D28D9] rounded-full ml-2"></div>
+               <div class="w-4 h-4 bg-[#6D28D9] rounded-full ml-2 animate-bounce"></div>
       </div>
+
+      
     </div>
 
     <!-- Cards -->
@@ -216,7 +228,7 @@
       </h2>
       <div class="flex items-center mt-2">
         <div class="w-[300px] sm:w-[300px] md:w-[500px] h-[5px] bg-gradient-to-r from-[#A875FF] to-transparent"></div>
-        <div class="w-4 h-4 bg-[#6D28D9] rounded-full ml-2"></div>
+               <div class="w-4 h-4 bg-[#6D28D9] rounded-full ml-2 animate-bounce"></div>
       </div>
     </div>
 

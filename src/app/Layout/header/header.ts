@@ -1,10 +1,10 @@
 import { CommonModule, NgIf } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [NgIf, CommonModule],
+  imports: [NgIf, CommonModule, RouterModule],
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
